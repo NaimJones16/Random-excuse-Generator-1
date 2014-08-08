@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Excuse Generator</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="RandomExcuses.js"></script>
+    <style>
+     body {
+        text-align: center;
+        font-family: helvetica;
+        background-color: blue;
+        }  
+
+      select { 
+          border: 1;
+          padding: 10px;
+          font-size: 18px;
+          color: green;
+          background: red;
+        }
+        #excuseBox{
+          document.getElementById('textboxid').style.height="200px";
+          height: 600px;
+          width: 1800px;
+          background: black;
+          color: #FFFFFF;
+          font-size: 40px;
+          border-radius: 20px;
+        } 
+
+        button[type="button"] {
+          color: white;
+          border: 0;
+          background: red;
+          color: white;
+        }
+    </style>
+  <img src="file://localhost/Users/allstarcode/floobits/Naimjones/NaimJones/randomexcusegeneratorpicture.jpg">
+  </head>
+
+<body>
+<form onclick="console.log("randomhomeWorkExcusesArray[i]")">
+  Excuse: <input id="excuseBox">
+</form>
+
+<select id="myExcuseCategory">
+  <option value="0">Homework Excuses</option>
+  <option value="1">Late For Work</option>
+  <option value="2">Late For School</option>
+  <option value="3">Didn't do Chores</option>
+</select>
+
+<button id="randomButton">Random</button>
+<!-- <button2 id="LikeButton">Like</button2> -->
+  
+</body>
+</html>
